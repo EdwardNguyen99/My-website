@@ -1,0 +1,647 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+header {
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)),url("../images/foody-template.jpg");
+    height: 650px;
+    background-size: cover;
+    text-align: center;
+}
+.logo {
+    color: white;
+    font-family: 'Yesteryear',cursive;
+    font-size: 33px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 33px 43px;     
+}
+
+.nav-menu {
+    list-style: none;
+    color:tomato;
+}
+.nav-menu li {
+    font-size: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+}
+.nav-menu li a{
+    text-decoration: none;
+    color:#fff;
+    padding-left: 10px;
+    padding:15px;
+}
+.nav-menu a:hover {
+    color:red;
+}
+.nav-menu a:active {
+    color:royalblue;
+}
+
+.header-title-1 {
+    color: #F2AC32;
+    font-size:44px;
+    font-family: 'Rochester', cursive;
+    margin-top: 120px;
+    margin-bottom: 10px;
+}
+.header-title-2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 55px;
+    color:salmon;
+    letter-spacing: 5px;/*khoang cach giua 2 chu*/
+    margin-bottom: 25px;
+}
+
+.header-cta-button {
+    color:teal;
+    padding:10px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: peru;
+    transition: all 0.3s ease-in-out;
+}
+.header-cta-button:hover {
+    color:rgb(168,149,116);
+
+}
+.my-bag {
+    font-size: 26px;
+    
+}
+.search {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/*------DISCOVER SECTION-------*/
+.discover-section {
+    background-color:#f0f0f0;   
+    display: flex;
+    justify-content: center;
+    padding:80px;   
+}
+
+.food-item {
+    height: 300px;
+    width: 270px;
+    margin-left: 20px;
+    margin-right: 2 0px;
+    text-align: center;
+     
+}
+
+.food-border {
+    border:2px solid #F2AC32;
+    position: relative;
+}
+.food-overlay {
+    background-color: plum;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 100%;
+    height: 130%;
+    padding:100px 10px 0 10px;
+}
+.food-item p {
+    color:rgb(99,99,99);
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 10px;   
+}
+.food-item a {
+    font-size: 16px;
+    color:darkcyan;
+    text-decoration: none;
+}
+
+.food-1 {
+    background-image: url("../images/burger.jpg");
+    background-size: cover;
+    margin-top: 50px;
+    -webkit-box-shadow: 23px 59px 18px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 23px 59px 18px 0px rgba(0,0,0,0.75);
+    box-shadow: 23px 59px 18px 0px rgba(0,0,0,0.75);
+
+}
+.food-2 {
+    background-image: url("../images/ice-cream.jfif");
+    background-size: cover  ;
+}
+
+.discover-h1 {
+    font-family: 'Rochester', cursive;   
+    color:#F2AC32;
+    margin-bottom: 15px;
+}    
+.discover-h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    letter-spacing: 6px;
+    color: #fff;
+    
+}
+
+
+
+.specialties-section {
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.9)),url("../images/drink.jfif");
+    background-size: cover;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.specialities-h1 {
+    font-family: 'Rochester', cursive;
+    color: #F2AC32;
+    margin-bottom: 15px;
+}
+.specialities-h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    color:#fff;
+}
+
+.specialities -h3 {
+    color: #fff;
+}
+.specialities-middle {
+        text-align: center;
+        position: relative; 
+}
+
+.specialities-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.specialities-col {
+    width: 370px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.specialities-image1,
+.specialities-image2,.specialities-image3 {
+    width:100%;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.specialities-image1 {
+    background-image: url('../images/download.jpg');
+    background-size: cover;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.specialities-image2 {
+    background-size: cover;
+    background-image: url('../images/Delicious.jpg');
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.specialities-image3 {
+    background-image: url('../images/Cooker.jpg');
+    background-size: cover;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.specialities-h3 {
+    font-size: 25px;
+    font-family: 'Oswald',sans-serif;
+    letter-spacing: 3px;
+    margin-bottom: 90px;
+     color:#fff;
+}
+.specialities-image1:hover .specialities-overlay{
+    display: block;
+}
+
+.specialities-image2:hover .specialities-overlay{
+    display: block;
+}
+
+.specialities-image3:hover .specialities-overlay{
+    display: block;
+}
+
+.specialities-overlay {
+    /*opacity: 0; /*thuoc tinh hien thi cap do trong suot cho thanh phan*/
+    background-color: rgba(242, 172,50, 0.7);
+    position: absolute;
+    width:370px;
+    height: 250px;
+    padding:10px;
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+.specialities-overlay-border {
+    border: 2px solid white;
+    width: 100%;
+    height: 100%;
+    color: #00FF99	;
+    font-size: 25px;
+    display: flex;
+    justify-content:center;
+    align-items : center ;
+    font-family: 'Oswald',sans-serif;
+    letter-spacing: 3px;
+}
+
+.specialities-top {
+    background-color: #f0f0f0;
+    position: relative;
+    display: none;
+}
+/* .specialities-top, .specialities-middle, .specialities-bottom {
+    height:400px;
+    width:100%;
+} */
+
+.specialities-bottom {
+    position: relative;
+    background-color: #f0f0f0;
+
+}
+
+.specialities-middle:after {
+    content:'';
+    position:absolute;
+    border-bottom: 100px solid #f0f0f0;
+    border-left:100vw solid transparent;
+    bottom:-100px;
+    right:0;
+
+}
+.specialities-middle:before {
+     content:'';
+     position:absolute;
+     border-top: 100px solid #f0f0f0;
+     border-left:99.8vw solid transparent;
+     top:-100px;
+     left:0;
+
+}
+
+/************************** START SPECIAL MENU SECTION **********************************/
+
+.special-menu-section {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding:50px;
+
+}
+.special-menu-h1 {
+    font-family: "Rochester",cursive;
+    color:#F2AC32;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+.special-menu-h2 {
+    color:#000;
+    margin-bottom: 50px;
+    font-family: 'Oswald',sans-serif;
+    letter-spacing: 2px;
+    font-size: 50px;
+
+}
+.special-menu-h3 {
+    width: 100%;
+    font-family: "Rochester",cursive;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.special-menu-h4 {
+   
+    font-family: "Oswald",sans-serif;
+    width: 100%;
+    letter-spacing: 5 px;
+}
+
+.separator {
+    width:50px;
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    margin:15px auto;
+}
+.special-menu-p {
+    font-family: "Oswald",sans-serif;
+    font-size: 15px;
+    padding: 30px 20px;
+    width: 100%;
+}
+
+
+.special-menu-col {
+    width:45%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.col-large-1 {
+    background-color: #F2AC32;
+    color:#fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.col-large-3 {
+    background-color:cornflowerblue;
+    color:#fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.col-large {
+    width:50%;
+    height:400px;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.fa .fa-cutlery,.fa-paragraph,.fa .fa-rub {
+    width:100%;
+    font-size:50px;
+    margin-bottom: 10px;
+}
+.col-large-4 {
+    background-image: url('../images/pizza.jpg');
+    background-size: cover;
+}
+.col-large-2 {
+    background-image: url('../images/1.jpg');
+    background-size: cover; 
+}
+
+.col-small-1 {
+    background-color: #fff;   
+}
+
+.col-small-3 {
+    background-image: url('../images/doner-kebab.jpg');
+    background-size: cover;
+    background-position: center ;
+}
+.special-menu-container {
+    width:70%;
+    margin:0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.col-small-2 {
+    background-image: url('../images/vegetarian.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.separator-orange {
+    width:50px;
+    display: inline-block;
+    margin:15px auto;
+    border-bottom: 2px solid rgb(77, 19, 138);
+}
+.col-small-h3 {
+    font-family: "Rochester",cursive;
+    font-size: 20px;
+    letter-spacing: 2px;
+    width: 100% ;
+    
+}
+
+.col-small-h5 {
+    width:100%;
+    color:rgb(51, 165, 93);
+    letter-spacing: 3px;
+    font-family: "Oswald",sans-serif;
+    margin-top: 10px;
+}
+
+.col-small-h4 {
+    width:100%;
+    color:rgb(118, 37, 37);
+    letter-spacing: 3px;
+    font-family: "Oswald",sans-serif;
+}
+.col-small {
+    width:50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 225px;
+    flex-wrap: wrap;
+}
+
+
+
+.our-menu-section {
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url("../images/perfect-pancakes.jpg");
+
+    background-size: cover;
+    text-align: center;
+    padding: 60px;
+    padding-bottom: 150px;
+}
+.our-menu-h1 {
+    font-family: "Rochester",cursive;
+    color:rgb(160, 47, 123);
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+.our-menu-h2 {
+    color:rgb(40, 57, 144);
+    margin-bottom: 50px;
+    font-family: 'Oswald',sans-serif;
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+
+.food-container {
+    color:#fff;
+    text-align: left;
+    font-family: 'Oswald',sans-serif;
+    margin-bottom: 25px;
+    margin:
+}
+
+.our-menu-row {
+    display: flex;
+    justify-content:center; 
+}
+.our-menu-col {
+    width:335px;
+    
+    margin:30px;
+}
+
+.food-title {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.food-price {
+    font-size: 25px;
+    color:#F2AC32;
+    font-family:'Oswald',sans-serif;
+}
+
+.food-ingredients {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.our-menu-button {
+    border:2px solid #5cbabf;
+    text-decoration: none;
+    color:white;
+    font-family: 'Oswald',sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding:10px 20px;
+    transition: all 0.3 ease-in-out;
+    
+}
+
+.our-menu-button:hover {
+    background-color: rgba(50, 95, 46, 0.4);
+    padding: 10px 20px;
+}
+
+
+.booking-table-section {
+    padding:100px;
+    text-align: center;
+}
+.booking-table-h1 {
+    font-family: "Rochester",cursive;
+    color:rgb(16, 68, 69);
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+.booking-table-h2 {
+    color:rgba(134, 184, 64, 0.489);
+    margin-bottom: 50px;
+    font-family: 'Oswald',sans-serif;
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+
+.booking-table-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.booking-div {
+    background-color: rgb(115, 35, 35);
+    margin:30px 15px;
+    font-family: 'Oswald',sans-serif;
+}
+
+.booking-icon {
+    padding:15px 20px;
+    display: inline-block;
+    border-right: 2px solid grey;
+}
+
+.booking-data {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.booking-cta {
+    background-color: linen;
+    color: mediumseagreen;
+    text-decoration: none;
+    padding:20px 30px;
+    margin-right: 15px;
+}
+
+
+footer {
+    padding:100px;
+    padding-bottom: 0;
+    background-position: center;
+    color: #fff;
+    background-size: cover;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url("../images/images.jpg");
+}
+
+.footer-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    margin:30px 60px;
+}
+.footer-title {
+    font-family: 'Oswald',sans-serif;
+    color: #F2AC32;
+    margin-bottom: 30px;
+    font-weight: 400px;
+
+}
+
+.footer-text {
+    margin-bottom: 10px;
+    font-family: 'Oswald',sans-serif;
+    font-size: 14px;
+}
+
+.footer-email {
+    padding:10px 15px;
+    width:150px;
+    margin-bottom: 30px;
+
+}
+.footer-subcribe {
+    display: inline-block;
+    width:190px;
+    color:#fff;
+    font-family: "Oswald",sans-serif;
+    background-color: #F2AC32;
+    height: 40px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.copyright{
+    padding:20px 0px;
+    color:#f0f0f0;
+    
+    font-size: 15px;
+    text-align: center;
+    font-family: "Oswald",sans-serif;
+    border-top: 2px solid ;
+}
+.copy-rightname {
+    color: #F2AC32;
+}
